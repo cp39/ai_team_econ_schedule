@@ -476,11 +476,16 @@
     .footer-inner p { margin: 0; }
 
     footer a {
-      color: var(--white);
+      color: inherit;
+      font: inherit;
       text-decoration: none;
     }
 
-    footer a:hover { text-decoration: underline; }
+    footer a:hover,
+    footer a:focus-visible {
+      color: inherit;
+      text-decoration: none;
+    }
 
     @media (max-width: 860px) {
       .hero { padding: 78px 0 68px; }
@@ -699,7 +704,7 @@
   <footer>
     <div class="container footer-inner">
       <p>生成式 AI 与团队生产实验</p>
-      <p><a href="https://ai-team-econ.cn/" target="_blank" rel="noopener">ai-team-econ.cn ↗</a> · 更新于 2026.10.28</p>
+      <p>Made by <a href="https://github.com/cp39/ai_team_econ_schedule" target="_blank" rel="noopener">cp39</a> (<a href="https://jianduoli.com/" target="_blank" rel="noopener">Jianduo Li</a>) · 更新于 2026.10.28</p>
     </div>
   </footer>
 </body>
